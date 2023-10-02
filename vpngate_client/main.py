@@ -181,7 +181,7 @@ class MainClass:
         value = self.my_tree.item(item, "values")
         file_name = filedialog.asksaveasfilename(
             initialfile=value[1] + ".ovpn",
-            initialdir=os.path.abspath(os.path.dirname(__file__)),
+            initialdir="/workdir/",
             filetypes=[("", ".ovpn")],
         )
         if len(file_name) != 0:
